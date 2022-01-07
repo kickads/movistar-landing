@@ -22,12 +22,12 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="d-flex flex-column h-100">
+<body>
 <?php $this->beginBody() ?>
 
 
-<main role="main" class="flex-shrink-0">
-    <div class="container">
+<main>
+    <div>
         <?= $content ?>
     </div>
 </main>
