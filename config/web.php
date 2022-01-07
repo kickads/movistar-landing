@@ -5,6 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
+    'name' => 'TIGO Admin Panel',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
