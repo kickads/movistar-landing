@@ -7,7 +7,12 @@
 /* Components */
 @import './components/form.css';
 @import './components/button.css';
+@import './components/button-wpp.css';
+@import './components/accordion.css';
 
 /* Sections */
 @import './sections/header.css';
 @import './sections/banner.css';
+@import './sections/plans.css';
+@import './sections/pass-number.css';
+@import './sections/contact.css';

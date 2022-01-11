@@ -30,6 +30,10 @@ AppAsset::register($this);
     <div>
         <?= $content ?>
     </div>
+	<a href="#" class="btn-wpp">
+		<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__whatsapp-white.svg') ?>" alt="">
+		<span>Ayuda</span>
+	</a>
 </main>
 
 <?php $this->endBody() ?>
