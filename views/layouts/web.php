@@ -9,6 +9,7 @@ use yii\bootstrap4\Breadcrumbs;
 use yii\bootstrap4\Html;
 use yii\bootstrap4\Nav;
 use yii\bootstrap4\NavBar;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 ?>
@@ -31,10 +32,16 @@ AppAsset::register($this);
         <?= $content ?>
     </div>
 	<a href="#" class="btn-wpp">
-		<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__whatsapp-white.svg') ?>" alt="">
+		<img src="<?= Url::to('@web/imgs/icons/icon__whatsapp-white.svg') ?>" alt="">
 		<span>Ayuda</span>
 	</a>
 </main>
+<!-- ============================================================== -->
+<!-- Page plugins -->
+<!-- ============================================================== -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="<?= Url::to('@web/js/register-form.js') ?>" type="text/javascript"></script>
 
 <?php $this->endBody() ?>
 </body>

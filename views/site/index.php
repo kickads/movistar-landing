@@ -16,14 +16,14 @@ $this->title = 'TIGO';
 	</div>
 	<section class="banner">
 		<div class="wrapper banner__container">
-			<form action="#" class="form">
+			<form class="form">
 				<h2 class="form__title">Déjanos tus datos para recibir más información</h2>
 				<div class="form__item">
 					<input type="text" name="full-name" id="full-name" class="form__item-field" autocomplete="off" placeholder="Nombre y apellido">
 					<label for="full-name" class="form__item-label">Nombre</label>
 				</div>
 				<div class="form__item">
-					<input type="number" name="phone" id="full-name" class="form__item-field" autocomplete="off" placeholder="30XXXXXXX">
+					<input type="number" name="phone" id="phone" class="form__item-field" autocomplete="off" placeholder="30XXXXXXX">
 					<label for="full-name" class="form__item-label">Número móvil</label>
 				</div>
 				<div class="form__info">
@@ -33,7 +33,7 @@ $this->title = 'TIGO';
 							términos y condiciones
 						</a>
 					</p>
-					<button class="form__btn">TE LLAMAMOS</button>
+					<button class="form__btn" id="register">TE LLAMAMOS</button>
 				</div>
 			</form>
 			<div class="banner__info-content">
