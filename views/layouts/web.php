@@ -31,10 +31,10 @@ AppAsset::register($this);
     <div>
         <?= $content ?>
     </div>
-	<a href="#" class="btn-wpp">
-		<img src="<?= Url::to('@web/imgs/icons/icon__whatsapp-white.svg') ?>" alt="">
-		<span>Ayuda</span>
-	</a>
+<!--	<a href="#" class="btn-wpp">-->
+<!--		<img src="--><?//= Url::to('@web/imgs/icons/icon__whatsapp-white.svg') ?><!--" alt="">-->
+<!--		<span>Ayuda</span>-->
+<!--	</a>-->
 </main>
 <!-- ============================================================== -->
 <!-- Page plugins -->

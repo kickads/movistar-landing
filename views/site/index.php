@@ -406,6 +406,24 @@ $this->title = 'TIGO';
 			</div>
 		</div>
 	</section>
+	<div class="conditions">
+		<p>Este portal usa cookies y puede recolectar datos personales.</p>
+		<p>
+			Este portal usa cookies y puede recolectar datos personales. Para continuar acepte nuestro
+			<a href="" target="_blank">Aviso de Privacidad</a>
+			y los
+			<a href="" target="_blank">
+				Términos y Condiciones
+			</a>
+		</p>
+		<div class="conditions__action">
+			<div class="conditions__action-read">
+				<span>LEER MÁS</span>
+				<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__arrow.svg') ?>" alt="">
+			</div>
+			<button class="conditions__action-btn">ACEPTO</button>
+		</div>
+	</div>
 </div>
 <script>
 	const tabContentHeader1 = document.querySelector('.tab-content__header-1');
@@ -414,6 +432,8 @@ $this->title = 'TIGO';
 	const inputCheck1 = document.getElementById('chck1');
 	const inputCheck2 = document.getElementById('chck2');
 	const inputCheck3 = document.getElementById('chck3');
+	const conditionRead = document.querySelector('.conditions__action-read');
+	const conditionsBtn = document.querySelector('.conditions__action-btn');
 	
 	inputCheck1.addEventListener('change', () => {
 		if (inputCheck1.checked) {
@@ -438,4 +458,24 @@ $this->title = 'TIGO';
 			tabContentHeader3.style.display = 'none';
 		}
 	})
+	
+	if (localStorage.getItem('TigoCookieConsent')) {
+		document.querySelector('.conditions').style.display = 'none';
+	} else {
+		conditionRead.addEventListener('click', () => {
+			document.querySelector('.conditions__action-read img').classList.toggle('rotate');
+			if (window.getComputedStyle(document.querySelector('.conditions p:nth-of-type(1)')).getPropertyValue('display') === 'block') {
+				document.querySelector('.conditions p:nth-of-type(1)').style.display = 'none';
+				document.querySelector('.conditions p:nth-of-type(2)').style.display = 'block';
+			} else {
+				document.querySelector('.conditions p:nth-of-type(1)').style.display = 'block';
+				document.querySelector('.conditions p:nth-of-type(2)').style.display = 'none';
+			}
+		})
+		
+		conditionsBtn.addEventListener('click', () => {
+			document.querySelector('.conditions').style.display = 'none';
+			localStorage.setItem('TigoCookieConsent', 'cookie-accepted');
+		});
+	}
 </script>
