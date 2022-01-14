@@ -117,6 +117,10 @@
    font-size: 14px;
 }
 
+.tab-content__items span {
+   text-align: left;
+}
+
 .tab-content__header-1,
 .tab-content__header-2,
 .tab-content__header-3 {
