@@ -15,8 +15,11 @@ class User extends \yii\base\BaseObject implements \yii\web\IdentityInterface
             'id' => '100',
             'username' => 'kickads',
             'password' => 'r7Mxs6sv',
-//            'authKey' => 'test100key',
-//            'accessToken' => '100-token',
+        ],
+        '101' => [
+            'id' => '101',
+            'username' => 'tigo',
+            'password' => 'Xd6hpvN8',
         ],
     ];
 

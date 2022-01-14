@@ -3,14 +3,36 @@
 namespace app\controllers;
 
 use app\models\Forms;
+use app\models\FormsSearch;
 use Yii;
+use yii\filters\AccessControl;
+use yii\filters\VerbFilter;
 use yii\helpers\Json;
+use yii\web\Controller;
 
-class FormsController extends \yii\web\Controller
+class FormsController extends Controller
 {
-    public function actionIndex()
+    public function behaviors()
     {
-        return $this->render('index');
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['index', 'view'],
+                'rules' => [
+                    [
+                        'actions' => ['index', 'view'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'delete' => ['POST'],
+                ],
+            ],
+        ];
     }
 
     public function beforeAction($action)
@@ -40,6 +62,22 @@ class FormsController extends \yii\web\Controller
         }
 
         return Json::encode($success);
+    }
+
+    /**
+     * Lists all Forms models.
+     * @return mixed
+     */
+    public function actionIndex()
+    {
+        $this->layout = "main";
+        $searchModel = new FormsSearch();
+        $dataProvider = $searchModel->search($this->request->queryParams);
+
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
     }
 
 }
