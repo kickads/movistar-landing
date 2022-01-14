@@ -77,6 +77,22 @@
    border-radius: 1rem;
 }
 
+.successContent, .errorContent  {
+   display: none;
+   text-transform: none;
+   letter-spacing: 1px;
+}
+
+.red-text {
+   color: #e1534f;
+   font-size: 10px;
+}
+
+.green-text {
+   color: #23ac3e;
+   font-size: 12px;
+}
+
 @media screen and (min-width: 1023px) {
    .form {
       display: flex;

@@ -26,8 +26,14 @@ $this->title = 'TIGO';
 					<input type="number" name="phone" id="phone" class="form__item-field" autocomplete="off" placeholder="30XXXXXXX">
 					<label for="full-name" class="form__item-label">Número móvil</label>
 				</div>
+                    <h5 class="errorContent red-text">
+                        *Verifica que tus datos estén correctos.
+                    </h5>
+                    <h5 class="successContent green-text">
+                        Muchas gracias. En breve te contactaremos.
+                    </h5>
 				<div class="form__info">
-					<p class="form__info-text"> Al presionar "Te llamamos" aceptas loss
+					<p class="form__info-text"> Al presionar "Te llamamos" aceptas los
 						<a href="https://www.tigo.com.co/legal-y-regulatorio/politicas-tigo#politicas-tigo-terminos-y-condiciones-de-la-pagina-web" class="form__info-link"
 						   target="_blank">
 							términos y condiciones
