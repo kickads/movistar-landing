@@ -10,8 +10,11 @@
     function saveRegister(){
         var name        = $("#full-name").val();
         var phone       = $("#phone").val();
+        var ktoken      = $("#form-ktoken").val();
+        var pubId       = $("#form-pubId").val();
+        var providerId  = $("#form-providerId").val();
 
-        var dataString = 'name='+name+'&phone='+phone;
+        var dataString = 'name='+name+'&phone='+phone+'&ktoken='+ktoken+'&pubId='+pubId+'&providerId='+providerId;
 
         if ( (name.length > 1) || (phone.length > 1) ) {
             $.ajax({

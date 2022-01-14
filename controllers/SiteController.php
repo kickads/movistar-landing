@@ -62,7 +62,16 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $this->layout = "web";
-        return $this->render('index');
+        $request      = Yii::$app->request;
+        $ktoken       = $request->get('ktoken') ?: null;
+        $pubId        = $request->get('pubId') ?: null;
+        $providerId   = $request->get('providerId') ?: null;
+
+        return $this->render('index',[
+            'ktoken'       => $ktoken,
+            'providerId'   => $providerId,
+            'pubId'        => $pubId,
+        ]);
     }
 
     /**

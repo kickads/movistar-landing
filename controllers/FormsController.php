@@ -53,10 +53,13 @@ class FormsController extends Controller
             $model->ip = Yii::$app->request->getRemoteIP();;
             $model->user_agent = Yii::$app->request->getUserAgent();
 
-            if($model->save())
+            if($model->save()){
                 $success = 200;
-            else
+                //TODO informe s2s a kickads
+                //TODO informar via post a Cliente
+            }else{
                 $success = $model->getErrors();
+            }
         } else {
             $success = 400;
         }
