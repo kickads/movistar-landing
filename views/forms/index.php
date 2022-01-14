@@ -49,7 +49,7 @@ $fullExportMenu = ExportMenu::widget([
         ],
         'panel' => [
             'type' => 'primary',
-            'heading' => '<i class="glyphicon glyphicon-list"></i> Participantes',
+            'heading' => '<i class="glyphicon glyphicon-list"></i> Registros',
             'before'=>'<em>* Resize table columns just like a spreadsheet by dragging the column edges.</em>',
             'after'=> '<div class="clearfix"></div>',
         ]
