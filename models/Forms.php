@@ -60,4 +60,15 @@ class Forms extends \yii\db\ActiveRecord
             'deleted_at' => 'Deleted At',
         ];
     }
+
+    public function informToKickads($ktoken)
+    {
+        if (!$ktoken || empty($ktoken))
+            return;
+
+        $url    = Yii::$app->params['kickadsPostback']."?ktoken=".$ktoken;
+        $curl   = curl_init($url);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        $result = curl_exec($curl);
+    }
 }

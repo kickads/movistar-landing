@@ -55,7 +55,8 @@ class FormsController extends Controller
 
             if($model->save()){
                 $success = 200;
-                //TODO informe s2s a kickads
+                // Informe s2s a kickads
+                $model->informToKickads($data->post('ktoken'));
                 //TODO informar via post a Cliente
             }else{
                 $success = $model->getErrors();
