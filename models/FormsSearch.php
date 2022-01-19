@@ -49,10 +49,13 @@ class FormsSearch extends Forms
 		    $endDate   = date('Y-m-d',strtotime('NOW'));
 	    }
 	    
-    	
+//	    echo $startDate . '<br>';
+//	    echo $endDate;
+//    	exit();
+	    
         $query = Forms::find();
 		
-	    $query->where(['between', 'created_at', $startDate, $endDate]);
+	    $query->where(['between', 'CONVERT(created_at, DATE)', $startDate, $endDate]);
 	    
 	    // add conditions that should always apply here
         $dataProvider = new ActiveDataProvider([

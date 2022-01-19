@@ -78,8 +78,8 @@ class FormsController extends Controller
     	$request       = Yii::$app->request;
 	    $get           = $request->get();
 	    
-	    $startDate     = isset($get['FormsSearch']['startDate']) ? $get['FormsSearch']['startDate'] : date('Y-m-01',strtotime('NOW -1 month'));
-	    $endDate       = isset($get['FormsSearch']['endDate']) ? $get['FormsSearch']['endDate'] : date('Y-m-01',strtotime('NOW -1 month'));
+	    $startDate     = isset($get['FormsSearch']['startDate']) ? $get['FormsSearch']['startDate'] : date('Y-m-d',strtotime('NOW -1 week'));
+	    $endDate       = isset($get['FormsSearch']['endDate']) ? $get['FormsSearch']['endDate'] : date('Y-m-d',strtotime('NOW'));
 	    
         $this->layout = "main";
         $searchModel = new FormsSearch();
