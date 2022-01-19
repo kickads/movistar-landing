@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\models\Forms;
 use app\models\FormsSearch;
+use phpDocumentor\Reflection\Project;
 use Yii;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
@@ -74,13 +75,21 @@ class FormsController extends Controller
      */
     public function actionIndex()
     {
+    	$request       = Yii::$app->request;
+	    $get           = $request->get();
+	    
+	    $startDate     = isset($get['FormsSearch']['startDate']) ? $get['FormsSearch']['startDate'] : date('Y-m-01',strtotime('NOW -1 month'));
+	    $endDate       = isset($get['FormsSearch']['endDate']) ? $get['FormsSearch']['endDate'] : date('Y-m-01',strtotime('NOW -1 month'));
+	    
         $this->layout = "main";
         $searchModel = new FormsSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
+            'searchModel'   => $searchModel,
+            'dataProvider'  => $dataProvider,
+            'startDate'     => $startDate,
+            'endDate'       => $endDate,
         ]);
     }
 

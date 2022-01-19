@@ -18,6 +18,9 @@ use Yii;
  */
 class Forms extends \yii\db\ActiveRecord
 {
+	public $startDate;
+	public $endDate;
+	
     /**
      * {@inheritdoc}
      */

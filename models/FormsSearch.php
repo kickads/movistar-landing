@@ -40,10 +40,21 @@ class FormsSearch extends Forms
      */
     public function search($params)
     {
+	    if (isset($params['FormsSearch']['startDate']) && isset($params['FormsSearch']['endDate']))
+	    {
+		    $startDate = $params['FormsSearch']['startDate'];
+		    $endDate   = $params['FormsSearch']['endDate'];
+	    }else{
+		    $startDate = date('Y-m-01',strtotime('NOW -1 month'));
+		    $endDate   = date('Y-m-d',strtotime('NOW'));
+	    }
+	    
+    	
         $query = Forms::find();
-
-        // add conditions that should always apply here
-
+		
+	    $query->where(['between', 'created_at', $startDate, $endDate]);
+	    
+	    // add conditions that should always apply here
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
@@ -68,7 +79,7 @@ class FormsSearch extends Forms
             ->andFilterWhere(['like', 'phone', $this->phone])
             ->andFilterWhere(['like', 'ip', $this->ip])
             ->andFilterWhere(['like', 'user_agent', $this->user_agent]);
-
+		
         return $dataProvider;
     }
 }
