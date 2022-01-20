@@ -39,13 +39,13 @@ $config = [
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
+                    'levels' => ['error', 'warning', 'info'],
                 ],
-//                [
-//                    'class' => 'yii\log\FileTarget',
-//                    'categories' => ['s2s'],
-//                    'logFile' => '@app/runtime/logs/s2s.log',
-//                ],
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'categories' => ['s2s'],
+                    'logFile' => '@app/runtime/logs/s2s.log',
+                ],
             ],
         ],
         'db' => $db,
