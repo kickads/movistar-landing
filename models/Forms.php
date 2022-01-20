@@ -72,7 +72,7 @@ class Forms extends \yii\db\ActiveRecord
 
         try {
             $url    = Yii::$app->params['kickadsPostback']."?ktoken=".$ktoken;
-            \Yii::info('Notificando s2s a Kickads - Postback:'.$url, 's2s');
+            Yii::info('Notificando s2s a Kickads - Postback:'.$url, 's2s');
 
             $curl   = curl_init($url);
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
