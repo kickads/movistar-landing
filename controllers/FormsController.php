@@ -46,7 +46,7 @@ class FormsController extends Controller
     {
         $data = Yii::$app->request;
 
-        if ($data->post('name')) {
+        if ($data->post('phone')) {
 
             $model = new Forms();
             $model->full_name = $data->post('name');
@@ -58,7 +58,8 @@ class FormsController extends Controller
                 $success = 200;
                 // Informe s2s a kickads
                 $model->informToKickads($data->post('ktoken'));
-                //TODO informar via post a Cliente
+                // Informe s2s a Cliente
+//                $model->informToClient($data);
             }else{
                 $success = $model->getErrors();
             }
