@@ -79,17 +79,16 @@ class Forms extends \yii\db\ActiveRecord
             $result = curl_exec($curl);
 
             if (!$result) {
-                \Yii::error('Error en notificacion s2s a Kickads: Empty result', 's2s');
+                Yii::error('Error en notificacion s2s a Kickads: Empty result', 's2s');
                 return NULL;
             }
 
             curl_close($curl);
-//            $response = Json::decode($result);
 
-            \Yii::info('Response s2s a Kickads -:'.$result, 's2s');
+            Yii::info('Response s2s a Kickads -:'.$result, 's2s');
 
         }catch (\Exception $exception ) {
-            \Yii::error('Error en notificacion s2s a Kickads - Error:'.$exception->getMessage(), 's2s');
+            Yii::error('Error en notificacion s2s a Kickads - Error:'.$exception->getMessage(), 's2s');
         }
     }
 
@@ -97,7 +96,7 @@ class Forms extends \yii\db\ActiveRecord
     {
         try {
             $url    = Yii::$app->params['clientPostback'];
-            \Yii::info('Notificando s2s a Cliente: '.$url, 's2s');
+            Yii::info('Notificando s2s a Cliente: '.$url, 's2s');
 
             $postData = [
                 "firstname" => $data->post('name'),
@@ -118,10 +117,14 @@ class Forms extends \yii\db\ActiveRecord
             curl_setopt_array($curl,$options);
             $result=curl_exec($curl);
 
-            curl_close($curl);
-//            $response = Json::decode($result);
+            if (!$result) {
+                Yii::error('Error en notificacion s2s a cliente: Empty result', 's2s');
+                return NULL;
+            }
 
-            \Yii::info('Response s2s a cliente -:'.$result, 's2s');
+            curl_close($curl);
+
+            Yii::info('Response s2s a cliente -:'.$result, 's2s');
 
         }catch (\Exception $exception ) {
             \Yii::error('Error en notificacion s2s a Cliente - Error:'.$exception->getMessage(), 's2s');
