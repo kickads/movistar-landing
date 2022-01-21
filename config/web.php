@@ -49,14 +49,16 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                [
+                    'pattern' => 'admin',
+                    'route' => 'forms/index',
+                ],
             ],
         ],
-        */
     ],
     'modules' => [
         'gridview' =>  [
