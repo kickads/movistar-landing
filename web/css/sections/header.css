@@ -1,0 +1,9 @@
+.header {
+   background: var(--primary-tigo);
+}
+
+@media screen and (min-width: 1023px) {
+   .header {
+      padding: 0 2rem 0.5rem;
+   }
+}

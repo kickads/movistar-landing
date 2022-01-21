@@ -61,7 +61,17 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $this->layout = "web";
+        $request      = Yii::$app->request;
+        $ktoken       = $request->get('ktoken') ?: null;
+        $pubId        = $request->get('pubId') ?: null;
+        $providerId   = $request->get('providerId') ?: null;
+
+        return $this->render('index',[
+            'ktoken'       => $ktoken,
+            'providerId'   => $providerId,
+            'pubId'        => $pubId,
+        ]);
     }
 
     /**
@@ -95,7 +105,7 @@ class SiteController extends Controller
     {
         Yii::$app->user->logout();
 
-        return $this->goHome();
+        return $this->redirect(['site/login']);
     }
 
     /**
