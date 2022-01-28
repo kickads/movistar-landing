@@ -354,7 +354,7 @@ $this->title = 'TIGO';
 						</label>
 						<div class="tab-terms tab-content">
 							<ul class="tab-terms__items">
-								<li>Promoción válida hasta el 31 de febrero 2022.</li>
+								<li>Promoción válida hasta el 28 de febrero 2022.</li>
 								<li>Aplica únicamente para solicitudes de portación directas a pospago.</li>
 								<li>Aplica para planes pospago con cargo básico mensual igual o superior a $45mil.</li>
 								<li>Promoción Doble Datos: Beneficio durante los primeros 6 meses a partir de la portación exitosa.</li>
