@@ -14,46 +14,48 @@ $this->title = 'TIGO';
 			<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__logo.svg') ?>" alt="Logo tigo" class="header__logo">
 		</div>
 	</div>
-	<section class="banner">
-		<div class="wrapper banner__container">
-			<form class="form">
-				<h2 class="form__title">Déjanos tus datos para recibir más información</h2>
-				<div class="form__item">
-					<input type="text" name="full-name" id="full-name" class="form__item-field" autocomplete="off" placeholder="Nombre y apellido">
-					<label for="full-name" class="form__item-label">Nombre</label>
-				</div>
-				<div class="form__item">
-					<input type="number" name="phone" id="phone" class="form__item-field" autocomplete="off" placeholder="30XXXXXXX">
-					<label for="full-name" class="form__item-label">Número móvil</label>
-				</div>
-                <div>
-                    <input type="hidden" id="form-ktoken" name="form-ktoken" value="<?php echo $ktoken ?>">
-                    <input type="hidden" id="form-pubId" name="form-pubId" value="<?php echo $pubId ?>">
-                    <input type="hidden" id="form-providerId" name="form-providerId" value="<?php echo $providerId ?>">
-                    <h5 class="errorContent red-text">
-                        *Verifica que tus datos estén correctos.
-                    </h5>
-                    <h5 class="successContent green-text">
-                        Muchas gracias. En breve te contactaremos.
-                    </h5>
-                </div>
-				<div class="form__info">
-					<p class="form__info-text"> Al presionar "Te llamamos" aceptas los
-						<a href="https://www.tigo.com.co/legal-y-regulatorio/politicas-tigo#politicas-tigo-terminos-y-condiciones-de-la-pagina-web" class="form__info-link"
-						   target="_blank">
-							términos y condiciones
-						</a>
-					</p>
-					<button class="form__btn" id="register">TE LLAMAMOS</button>
-				</div>
-			</form>
-			<div class="banner__info-content">
-				<div class="banner__info">
-					<p class="banner__info-text">PÁSATE A POSPAGO DESDE $45MIL</p>
-					<p class="banner__info-text">DOBLE DE DATOS X6MESES</p>
-					<p class="banner__info-text">+ 1ER MES GRATIS</p>
-				</div>
-				<span class="banner__terms">Aplican términos y condiciones</span>
+	<section class="banner-bg">
+		<div class="banner">
+			<div class="wrapper banner__container">
+				<form class="form">
+					<h2 class="form__title">Déjanos tus datos para recibir más información</h2>
+					<div class="form__item">
+						<input type="text" name="full-name" id="full-name" class="form__item-field" autocomplete="off" placeholder="Nombre y apellido">
+<!--						<label for="full-name" class="form__item-label">Nombre</label>-->
+					</div>
+					<div class="form__item">
+						<input type="number" name="phone" id="phone" class="form__item-field" autocomplete="off" placeholder="Número móvil">
+<!--						<label for="full-name" class="form__item-label">Número móvil</label>-->
+					</div>
+					<div>
+						<input type="hidden" id="form-ktoken" name="form-ktoken" value="<?php echo $ktoken ?>">
+						<input type="hidden" id="form-pubId" name="form-pubId" value="<?php echo $pubId ?>">
+						<input type="hidden" id="form-providerId" name="form-providerId" value="<?php echo $providerId ?>">
+						<h5 class="errorContent red-text">
+							*Verifica que tus datos estén correctos.
+						</h5>
+						<h5 class="successContent green-text">
+							Muchas gracias. En breve te contactaremos.
+						</h5>
+					</div>
+					<div class="form__info">
+						<p class="form__info-text"> Al presionar "Te llamamos" aceptas los
+							<a href="https://www.tigo.com.co/legal-y-regulatorio/politicas-tigo#politicas-tigo-terminos-y-condiciones-de-la-pagina-web" class="form__info-link"
+							   target="_blank">
+								términos y condiciones
+							</a>
+						</p>
+						<button class="form__btn" id="register">TE LLAMAMOS</button>
+					</div>
+				</form>
+				<!--			<div class="banner__info-content">-->
+				<!--				<div class="banner__info">-->
+				<!--					<p class="banner__info-text">PÁSATE A POSPAGO DESDE $45MIL</p>-->
+				<!--					<p class="banner__info-text">DOBLE DE DATOS X6MESES</p>-->
+				<!--					<p class="banner__info-text">+ 1ER MES GRATIS</p>-->
+				<!--				</div>-->
+				<!--				<span class="banner__terms">Aplican términos y condiciones</span>-->
+				<!--			</div>-->
 			</div>
 		</div>
 	</section>
@@ -352,7 +354,7 @@ $this->title = 'TIGO';
 						</label>
 						<div class="tab-terms tab-content">
 							<ul class="tab-terms__items">
-								<li>Promoción válida hasta el 31 de enero 2021.</li>
+								<li>Promoción válida hasta el 28 de febrero 2022.</li>
 								<li>Aplica únicamente para solicitudes de portación directas a pospago.</li>
 								<li>Aplica para planes pospago con cargo básico mensual igual o superior a $45mil.</li>
 								<li>Promoción Doble Datos: Beneficio durante los primeros 6 meses a partir de la portación exitosa.</li>
@@ -362,6 +364,7 @@ $this->title = 'TIGO';
 									<a href="https://www.tigo.com.co/">www.tigo.com.co/</a>
 								</li>
 							</ul>
+							<a href="<?= \yii\helpers\Url::to('@web/pdf/tigo.pdf') ?>" download="tigo">Ver PDF para más información</a>
 						</div>
 					</div>
 				</div>

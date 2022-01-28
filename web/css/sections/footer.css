@@ -1,0 +1,22 @@
+.footer {
+   background: var(--primary-tigo);
+   color: var(--white);
+}
+
+.footer .wrapper {
+   padding: 2rem 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2rem;
+}
+
+.footer__link {
+   font-size: 13px;
+}
+
+.footer__paragraph {
+   text-align: center;
+   font-size: 13px;
+}
+

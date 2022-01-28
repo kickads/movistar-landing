@@ -1,7 +1,11 @@
+.banner-bg {
+   background: var(--primary2-tigo);
+}
+
 .banner {
-   background-image: url('../../imgs/banner-tab.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
+   /*background-image: url('../../imgs/banner-tab.jpg');*/
+   /*background-repeat: no-repeat;*/
+   /*background-size: cover;*/
    font-family: Roboto, sans-serif;
 }
 
@@ -46,7 +50,10 @@
 
 @media screen and (min-width: 1023px) {
    .banner {
-      background-image: url('../../imgs/banner-desktop.jpg');
+      /*background-image: url('../../imgs/banner-desktop.jpg');*/
+      background-image: url('../../imgs/banner-sitio-desktop.png');
+      background-repeat: no-repeat;
+      background-size: cover;
    }
 
    .banner__container {
