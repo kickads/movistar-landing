@@ -98,6 +98,11 @@
    margin-bottom: 0;
 }
 
+.tab-content > a {
+   font-size: 14px;
+   color: var(--secondary-tigo);
+}
+
 .tab-content__items {
    padding: 0;
    margin: 0;

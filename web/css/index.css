@@ -12,6 +12,7 @@
 
 /* Sections */
 @import './sections/header.css';
+@import './sections/footer.css';
 @import './sections/banner.css';
 @import './sections/plans.css';
 @import './sections/pass-number.css';
