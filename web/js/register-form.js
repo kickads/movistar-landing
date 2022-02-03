@@ -19,7 +19,7 @@
         if ( (name.length > 1) || (phone.length > 1) ) {
             $.ajax({
                 type: "POST",
-                url: "index.php?r=forms/register",
+                url: "forms/register",
                 data: dataString,
                 success: function (data) {
                     if(data==200){
