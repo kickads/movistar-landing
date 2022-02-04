@@ -9,6 +9,7 @@
 @import './components/button.css';
 @import './components/button-wpp.css';
 @import './components/accordion.css';
+@import './components/loader.css';
 
 /* Sections */
 @import './sections/header.css';

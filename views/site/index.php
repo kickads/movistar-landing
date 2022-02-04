@@ -21,11 +21,9 @@ $this->title = 'TIGO';
 					<h2 class="form__title">Déjanos tus datos para recibir más información</h2>
 					<div class="form__item">
 						<input type="text" name="full-name" id="full-name" class="form__item-field" autocomplete="off" placeholder="Nombre y apellido">
-<!--						<label for="full-name" class="form__item-label">Nombre</label>-->
 					</div>
 					<div class="form__item">
 						<input type="number" name="phone" id="phone" class="form__item-field" autocomplete="off" placeholder="Número móvil">
-<!--						<label for="full-name" class="form__item-label">Número móvil</label>-->
 					</div>
 					<div>
 						<input type="hidden" id="form-ktoken" name="form-ktoken" value="<?php echo $ktoken ?>">
@@ -37,6 +35,15 @@ $this->title = 'TIGO';
 						<h5 class="successContent green-text">
 							Muchas gracias. En breve te contactaremos.
 						</h5>
+						
+						<div class="loader-tigo">
+							<div class="dots">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					
 					</div>
 					<div class="form__info">
 						<p class="form__info-text"> Al presionar "Te llamamos" aceptas los
@@ -48,14 +55,6 @@ $this->title = 'TIGO';
 						<button class="form__btn" id="register">TE LLAMAMOS</button>
 					</div>
 				</form>
-				<!--			<div class="banner__info-content">-->
-				<!--				<div class="banner__info">-->
-				<!--					<p class="banner__info-text">PÁSATE A POSPAGO DESDE $45MIL</p>-->
-				<!--					<p class="banner__info-text">DOBLE DE DATOS X6MESES</p>-->
-				<!--					<p class="banner__info-text">+ 1ER MES GRATIS</p>-->
-				<!--				</div>-->
-				<!--				<span class="banner__terms">Aplican términos y condiciones</span>-->
-				<!--			</div>-->
 			</div>
 		</div>
 	</section>
@@ -364,7 +363,6 @@ $this->title = 'TIGO';
 									<a href="https://www.tigo.com.co/">www.tigo.com.co/</a>
 								</li>
 							</ul>
-							<a href="<?= \yii\helpers\Url::to('@web/pdf/tigo.pdf') ?>" download="tigo">Ver PDF para más información</a>
 						</div>
 					</div>
 				</div>
