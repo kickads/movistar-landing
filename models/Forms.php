@@ -65,69 +65,69 @@ class Forms extends \yii\db\ActiveRecord
         ];
     }
 
-//    public function informToKickads($ktoken)
-//    {
-//        if (!$ktoken || empty($ktoken))
-//            return;
-//
-//        try {
-//            $url    = Yii::$app->params['kickadsPostback']."?ktoken=".$ktoken;
-//            Yii::info('Notificando s2s a Kickads - Postback:'.$url, 's2s');
-//
-//            $curl   = curl_init($url);
-//            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-//            $result = curl_exec($curl);
-//
-//            if (!$result) {
-//                Yii::error('Error en notificacion s2s a Kickads: Empty result', 's2s');
-//                return NULL;
-//            }
-//
-//            curl_close($curl);
-//
-//            Yii::info('Response s2s a Kickads -:'.$result, 's2s');
-//
-//        }catch (\Exception $exception ) {
-//            Yii::error('Error en notificacion s2s a Kickads - Error:'.$exception->getMessage(), 's2s');
-//        }
-//    }
+    public function informToKickads($ktoken)
+    {
+        if (!$ktoken || empty($ktoken))
+            return;
 
-//    public function informToClient($data)
-//    {
-//        try {
-//            $url    = Yii::$app->params['clientPostback'];
-//            Yii::info('Notificando s2s a Cliente: '.$url, 's2s');
-//
-//            $postData = [
-//                "firstname" => $data->post('name'),
-//                "phone" => $data->post('phone'),
-//                "medio" => "kickads",
-//                "oferta" => "pospagodobledatos",
-//            ];
-//
-//            $options = array(
-//                CURLOPT_URL            => $url,
-//                CURLOPT_SSL_VERIFYPEER => false,
-//                CURLOPT_POST           => true,
-//                CURLOPT_POSTFIELDS     => http_build_query($postData),
-//                CURLOPT_RETURNTRANSFER => true
-//            );
-//
-//            $curl = curl_init();
-//            curl_setopt_array($curl,$options);
-//            $result=curl_exec($curl);
-//
-//            if (!$result) {
-//                Yii::error('Error en notificacion s2s a cliente: Empty result', 's2s');
-//                return NULL;
-//            }
-//
-//            curl_close($curl);
-//
-//            Yii::info('Response s2s a cliente -:'.$result, 's2s');
-//
-//        }catch (\Exception $exception ) {
-//            \Yii::error('Error en notificacion s2s a Cliente - Error:'.$exception->getMessage(), 's2s');
-//        }
-//    }
+        try {
+            $url    = Yii::$app->params['kickadsPostback']."?ktoken=".$ktoken;
+            Yii::info('Notificando s2s a Kickads - Postback:'.$url, 's2s');
+
+            $curl   = curl_init($url);
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+            $result = curl_exec($curl);
+
+            if (!$result) {
+                Yii::error('Error en notificacion s2s a Kickads: Empty result', 's2s');
+                return NULL;
+            }
+
+            curl_close($curl);
+
+            Yii::info('Response s2s a Kickads -:'.$result, 's2s');
+
+        }catch (\Exception $exception ) {
+            Yii::error('Error en notificacion s2s a Kickads - Error:'.$exception->getMessage(), 's2s');
+        }
+    }
+
+    public function informToClient($data)
+    {
+        try {
+            $url    = Yii::$app->params['clientPostback'];
+            Yii::info('Notificando s2s a Cliente: '.$url, 's2s');
+
+            $postData = [
+                "firstname" => $data->post('name'),
+                "phone" => $data->post('phone'),
+                "medio" => "kickads",
+                "oferta" => "pospagodobledatos",
+            ];
+
+            $options = array(
+                CURLOPT_URL            => $url,
+                CURLOPT_SSL_VERIFYPEER => false,
+                CURLOPT_POST           => true,
+                CURLOPT_POSTFIELDS     => http_build_query($postData),
+                CURLOPT_RETURNTRANSFER => true
+            );
+
+            $curl = curl_init();
+            curl_setopt_array($curl,$options);
+            $result=curl_exec($curl);
+
+            if (!$result) {
+                Yii::error('Error en notificacion s2s a cliente: Empty result', 's2s');
+                return NULL;
+            }
+
+            curl_close($curl);
+
+            Yii::info('Response s2s a cliente -:'.$result, 's2s');
+
+        }catch (\Exception $exception ) {
+            \Yii::error('Error en notificacion s2s a Cliente - Error:'.$exception->getMessage(), 's2s');
+        }
+    }
 }
