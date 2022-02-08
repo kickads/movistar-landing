@@ -10,6 +10,7 @@ use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\helpers\Json;
 use yii\web\Controller;
+use yii\web\NotFoundHttpException;
 
 class FormsController extends Controller
 {
@@ -40,6 +41,22 @@ class FormsController extends Controller
     {
         $this->enableCsrfValidation = false;
         return parent::beforeAction($action);
+    }
+
+    /**
+     * Finds the Post model based on its primary key value.
+     * If the model is not found, a 404 HTTP exception will be thrown.
+     * @param integer $id
+     * @return Forms the loaded model
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    protected function findModel($id)
+    {
+        if (($model = Forms::findOne($id)) !== null) {
+            return $model;
+        }
+
+        throw new NotFoundHttpException('The requested page does not exist.');
     }
 
     public function actionRegister()
@@ -91,6 +108,21 @@ class FormsController extends Controller
             'dataProvider'  => $dataProvider,
             'startDate'     => $startDate,
             'endDate'       => $endDate,
+        ]);
+    }
+
+    /**
+     * Displays a single Post model.
+     * @param integer $id
+     * @return mixed
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    public function actionView($id)
+    {
+        $this->layout = "main";
+
+        return $this->render('view', [
+            'model' => $this->findModel($id),
         ]);
     }
 
