@@ -45,13 +45,50 @@ AppAsset::register($this);
 			</div>
 		</main>
 		<footer class="footer">
-			<div class="wrapper">
-				<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__logo.svg') ?>" alt="logo tigo" width="50">
-				<a href="#" class="form__info-link footer__link" target="_blank">Aviso de privacidad</a>
-				<p class="footer__paragraph">Tigo 2022 Todos los derechos Reservados
-					<br>
-					La navegación de este sitio constituye la aceptación de los términos y condiciones de uso.
+			<div class="wrapper footer__wrapper">
+				<p class="footer__section-1">
+					© Tigo Colombia 2022. Servicios móviles prestados por Colombia Móvil S.A. E.S.P. | Servicios fijos prestados por UNE EPM Telecomunicaciones S.A. Todos los derechos
+					reservados.
+					<span>
+						<a href="#" target="_blank" style="color: var(--secondary-tigo);">Términos y condiciones</a>
+						|
+						<a href="#" target="_blank" style="color: var(--secondary-tigo);">Política de protección de datos
+							personales</a>
+						|
+						<a href="#" target="_blank" style="color: var(--secondary-tigo);">Mapa del sitio</a>
+					</span>
 				</p>
+				<div class="footer__section-3">
+					<ul class="footer__list-icons">
+						<li>
+							<a href="#" target="_blank">
+								<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__facebook.svg') ?>" alt="icon" width="25">
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__twitter.svg') ?>" alt="icon" width="25">
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__instagram.svg') ?>" alt="icon" width="25">
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__youtube.svg') ?>" alt="icon" width="25">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="separator">|</div>
+				<div class="footer__section-3">
+					<span>
+						<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__accesibility.svg') ?>" alt="icon" width="25">
+					</span>
+					<a href="#" target="_blank" class="footer__link">ACCESIBILIDAD</a>
+				</div>
 			</div>
 		</footer>
 		<!-- ============================================================== -->
