@@ -1,5 +1,5 @@
 .header {
-   background: var(--primary-tigo);
-   text-align: center;
-      padding: 0 2rem   0.5rem;
+   background: var(--primary2-tigo);
+   text-align: left;
+   padding: 0 2rem 0.5rem;
 }

@@ -164,7 +164,6 @@
    width: 1.5rem;
    height: 1.5rem;
    text-align: center;
-   /*transition: all 0.35s;*/
 }
 
 .terms .tab {
@@ -183,18 +182,32 @@
 
    .cards-desk {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
    }
 
    .benefits {
-      max-width: 372px;
+      max-width: 270px;
       border-radius: 0.25rem;
       box-shadow: 0 0.125rem 0.625rem 0 rgba(0, 0, 0, .1);
       overflow: hidden;
    }
 
+   .benefits__emphasis {
+      display: flex;
+      align-items: center !important;
+      gap: 0 !important;
+   }
+
+   .benefits__emphasis span {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--primary2-tigo);
+   }
+
    .benefits__header {
-      color: var(--primary-tigo);
+      color: var(--primary2-tigo);
       padding: 2.5rem 1rem;
       border-top: 3px solid #00c8ff;
       border-bottom: 1px solid #e5eaf2;
@@ -235,5 +248,9 @@
 
    .benefits__items > li > span {
       text-align: left;
+   }
+
+   .benefits__end {
+      margin: 0 auto;
    }
 }
