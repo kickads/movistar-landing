@@ -61,7 +61,7 @@
    color: var(--tertiary-tigo);
 }
 
-.form__info-link {
+.form__info-link, .form__info-link:hover {
    color: var(--secondary-tigo);
 }
 
