@@ -76,7 +76,7 @@ class FormsController extends Controller
                 // Informe s2s a kickads
                 $model->informToKickads($data->post('ktoken'));
                 // Informe s2s a Cliente
-                $model->informToClient($data);
+//                $model->informToClient($data);
             }else{
                 $success = $model->getErrors();
             }
