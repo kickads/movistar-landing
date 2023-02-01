@@ -81,7 +81,7 @@ AppAsset::register($this);
 
 <footer class="footer mt-auto py-3 text-muted">
     <div class="container">
-        <p class="float-left">&copy; TIGO-Kickads <?= date('Y') ?></p>
+        <p class="float-left">&copy; movistar-Kickads <?= date('Y') ?></p>
         <p class="float-right">Powered by <a href="https://www.kickads.mobi/" rel="external" target="_blank">Kickads</a></p>
     </div>
 </footer>

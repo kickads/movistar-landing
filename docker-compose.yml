@@ -1,21 +1,21 @@
 version: '2'
 services:
-  tigo_web:
+  movistar_web:
     image: yiisoftware/yii2-php:7.4-apache
-    container_name: tigo_web
+    container_name: movistar_web
     volumes:
       - ~/.composer-docker/cache:/root/.composer/cache:delegated
       - ./:/app:delegated
     ports:
       - '8001:80'
     networks:
-      - tigo_web_network
-  db_tigo:
+      - movistar_web_network
+  db_movistar:
     image: mysql:5.7
-    container_name: db_tigo
+    container_name: db_movistar
     restart: always
     environment:
-      - MYSQL_DATABASE=tigo
+      - MYSQL_DATABASE=movistar
       - MYSQL_USER=admin
       - MYSQL_PASSWORD=root
       - MYSQL_ROOT_PASSWORD=root
@@ -24,11 +24,11 @@ services:
     expose:
       - '3306'
     volumes:
-      - db_tigo:/var/lib/mysql
+      - db_movistar:/var/lib/mysql
     networks:
-      - tigo_web_network
+      - movistar_web_network
 volumes:
-  db_tigo:
+  db_movistar:
 networks:
-  tigo_web_network:
+  movistar_web_network:
     driver: bridge

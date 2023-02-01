@@ -20,21 +20,40 @@ AppAsset::register($this);
 	<head>
 		<meta charset="<?= Yii::$app->charset ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="noindex" name="robots">
+    <meta name="description" content="Elegí el plan pospago y recibí WhatsApp gratis">
+    <meta name="keywords" content="">
+    <meta name="author" content="movistar">
+    <meta name="viewport" content="width=480, user-scalable=no" id="viewport">
+    <meta name="MobileOptimized" content="480" id="wViewport">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <!-- Carga de fuentes -->
+    <link rel="preload" href="./fonts/TelefonicaWeb-Light.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/TelefonicaWeb-Regular.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/TelefonicaWeb-Bold.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Guthen-Bloots-Alt1.ttf" as="font" crossorigin="anonymous">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/libraries.min.css">
+    <link rel="stylesheet" href="./css/styles-portabilidad-v4.min.css">
+    <!-- Scripts JS -->
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+    <script defer="" src="./js/site.min.js" type="text/javascript"></script>
+    <script defer="" src="./js/planesGenerator-v1.min.js" type="text/javascript"></script>
+    <script defer="" src="./js/libraries.min.js" type="text/javascript"></script>
+    <script defer="" src="./js/sliders.min.js" type="text/javascript"></script>
+    <script defer="" src="./js/automatizaWhatsapp.js" type="text/javascript"></script>
+    <script async="" src="./js/analyticsEvents.min.js" type="text/javascript"></script>
+    <script async="" src="./js/inputEventsHandler.min.js" type="text/javascript"></script>
+    <script async="" src="./js/modernizr-custom.js" type="text/javascript"></script>
 		<?php $this->registerCsrfMetaTags() ?>
 		<title><?= Html::encode($this->title) ?></title>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XKDJM75NVV"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			
-			gtag('js', new Date());
-			
-			gtag('config', 'G-XKDJM75NVV');
-		</script>
 		<?php $this->head() ?>
 	</head>
 	<body>
@@ -44,58 +63,6 @@ AppAsset::register($this);
 				<?= $content ?>
 			</div>
 		</main>
-		<footer class="footer">
-			<div class="wrapper footer__wrapper">
-				<p class="footer__section-1">
-					© Tigo Colombia 2022. Servicios móviles prestados por Colombia Móvil S.A. E.S.P. | Servicios fijos prestados por UNE EPM Telecomunicaciones S.A. Todos los derechos
-					reservados.
-					<span>
-						<a href="#" target="_blank" style="color: var(--secondary-tigo);">Términos y condiciones</a>
-						|
-						<a href="#" target="_blank" style="color: var(--secondary-tigo);">Política de protección de datos
-							personales</a>
-						|
-						<a href="#" target="_blank" style="color: var(--secondary-tigo);">Mapa del sitio</a>
-					</span>
-				</p>
-				<div class="footer__section-3">
-					<ul class="footer__list-icons">
-						<li>
-							<a href="#" target="_blank">
-								<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__facebook.svg') ?>" alt="icon" width="25">
-							</a>
-						</li>
-						<li>
-							<a href="#" target="_blank">
-								<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__twitter.svg') ?>" alt="icon" width="25">
-							</a>
-						</li>
-						<li>
-							<a href="#" target="_blank">
-								<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__instagram.svg') ?>" alt="icon" width="25">
-							</a>
-						</li>
-						<li>
-							<a href="#" target="_blank">
-								<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__youtube.svg') ?>" alt="icon" width="25">
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="separator">|</div>
-				<div class="footer__section-3">
-					<span>
-						<img src="<?= \yii\helpers\Url::to('@web/imgs/icons/icon__accesibility.svg') ?>" alt="icon" width="25">
-					</span>
-					<a href="#" target="_blank" class="footer__link">ACCESIBILIDAD</a>
-				</div>
-			</div>
-		</footer>
-		<!-- ============================================================== -->
-		<!-- Page plugins -->
-		<!-- ============================================================== -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="<?= Url::to('@web/js/register-form.js') ?>" type="text/javascript"></script>
 		<?php $this->endBody() ?>
 	</body>
 </html>

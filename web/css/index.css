@@ -1,21 +1,10 @@
-/* Bootstrapping */
-@import './bootstrapping/bootstrapping.css';
+@font-face {
+  font-family: movistar;
+  src: url(../fonts/movistar.ttf);
+}
 
-/* Utilities */
-@import './utilities/utilities.css';
-
-/* Components */
-@import './components/form.css';
-@import './components/button.css';
-@import './components/button-wpp.css';
-@import './components/accordion.css';
-@import './components/loader.css';
-
-/* Sections */
-@import './sections/header.css';
-@import './sections/footer.css';
-@import './sections/banner.css';
-@import './sections/plans.css';
-@import './sections/pass-number.css';
-@import './sections/contact.css';
-@import './sections/conditions.css';
+.movis-gut-celeste,
+.movis-gut,
+.movis-gut-mb {
+  font-family: movistar !important;
+}
