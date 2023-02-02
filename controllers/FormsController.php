@@ -66,7 +66,6 @@ class FormsController extends Controller
         if ($data->post('phone')) {
 
             $model = new Forms();
-            $model->full_name = $data->post('name');
             $model->phone = $data->post('phone');
             $model->ip = Yii::$app->request->getRemoteIP();;
             $model->user_agent = Yii::$app->request->getUserAgent();
