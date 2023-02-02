@@ -1,0 +1,10 @@
+@font-face {
+  font-family: movistar;
+  src: url(../fonts/movistar.ttf);
+}
+
+.movis-gut-celeste,
+.movis-gut,
+.movis-gut-mb {
+  font-family: movistar !important;
+}
