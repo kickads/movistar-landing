@@ -44,7 +44,7 @@ AppAsset::register($this);
     <link rel="stylesheet" href="./css/styles-portabilidad-v4.min.css">
     <!-- Scripts JS -->
     <script src="./js/jquery.min.js" type="text/javascript"></script>
-    <script defer="" src="./js/site.min.js" type="text/javascript"></script>
+    <!-- <script defer="" src="./js/site.min.js" type="text/javascript"></script> -->
     <script defer="" src="./js/planesGenerator-v1.min.js" type="text/javascript"></script>
     <script defer="" src="./js/libraries.min.js" type="text/javascript"></script>
     <script defer="" src="./js/sliders.min.js" type="text/javascript"></script>
