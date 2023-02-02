@@ -2,7 +2,7 @@
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
-    <h1 align="center">Proyecto TIGO</h1>
+    <h1 align="center">Proyecto MOVISTAR</h1>
     <br>
 </p>
 
