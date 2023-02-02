@@ -51,7 +51,7 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                         <div name="ani-modal" class="ctc form-banner">
                             <form
                                 class="form-group formHorizontal input-group js-formulario-movil-cerrado inconcertCTC banner-input"
-                                autocomplete="off">
+                                autocomplete="off" id="form-number">
                                 <input id="ani2" type="number" data-ic-form-field="phone" name="param3"
                                     placeholder="Ej: 1137989765"
                                     class="form-control anictc form-control-center tel_number white redondo text16 input-caja-banner"
@@ -102,10 +102,10 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                 <header class="planesMovistar_header">
                                     <img src="images/icono-capacidad-plan.png" class="d-inline icon-mb" />
                                     <p class="text20 mb0 bold d-inline capacidad-plan"><span
-                                            class="js__plan-gigas"></span> Gigas </p>
-                                    <p class="planesMovistar__priceTarifa">$<span
+                                            class="js__plan-gigas">3</span> Gigas </p>
+                                    <p class="planesMovistar__priceTarifa">$1.050<span
                                             class="js__plan-precio-oferta"></span><span class=""> x mes</span></p>
-                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$<span
+                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$3.500<span
                                             class="js__plan-full-price"></span> x mes</p>
                                 </header>
                                 <div class="js-precio-off">
@@ -117,7 +117,7 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                             <div class="col-xs-10 col-md-10 col-md-10 col-lg-10 text-left">
                                                 <p><span class="planesMovistar__descuento blue-centered mb0"
                                                         style="padding-left:0;">$<span
-                                                            class="js__plan-capacidad-unidad"></span> de
+                                                            class="js__plan-capacidad-unidad">2.450</span> de
                                                         ahorro</span><br>
                                                     <span class="testdr-leyenda">por mes durante 24 meses</span></p>
                                             </div>
@@ -274,10 +274,10 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                 <header class="planesMovistar_header">
                                     <img src="images/icono-capacidad-plan.png" class="d-inline icon-mb" />
                                     <p class="text20 mb0 bold d-inline capacidad-plan"><span
-                                            class="js__plan-gigas"></span> Gigas</p>
-                                    <p class="planesMovistar__priceTarifa">$<span
+                                            class="js__plan-gigas">6</span> Gigas</p>
+                                    <p class="planesMovistar__priceTarifa">$1.500<span
                                             class="js__plan-precio-oferta"></span><span class=""> x mes</span></p>
-                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$<span
+                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$5.100<span
                                             class="js__plan-full-price tachado"></span> x mes</p>
                                 </header>
                                 <div class="js-precio-off">
@@ -288,7 +288,7 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                             </div>
                                             <div class="col-xs-10 col-md-10 col-md-10 col-lg-10 text-left">
                                                 <p><span class="planesMovistar__descuento blue-centered mb0"
-                                                        style="padding-left:0;">$<span
+                                                        style="padding-left:0;">$3.600<span
                                                             class="js__plan-capacidad-unidad"></span> de
                                                         ahorro</span><br>
                                                     <span class="testdr-leyenda">por mes durante 24 meses</span></p>
@@ -463,10 +463,10 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                 <header class="planesMovistar_header">
                                     <img src="images/icono-capacidad-plan.png" class="d-inline icon-mb" />
                                     <p class="text20 mb0 bold d-inline capacidad-plan"><span
-                                            class="js__plan-gigas"></span> Gigas</p>
-                                    <p class="planesMovistar__priceTarifa">$<span
+                                            class="js__plan-gigas">10</span> Gigas</p>
+                                    <p class="planesMovistar__priceTarifa">$2.400<span
                                             class="js__plan-precio-oferta"></span><span class=""> x mes</span></p>
-                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$<span
+                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$8.400<span
                                             class="js__plan-full-price tachado"></span> x mes</p>
                                 </header>
                                 <div class="js-precio-off">
@@ -477,7 +477,7 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                             </div>
                                             <div class="col-xs-10 col-md-10 col-md-10 col-lg-10 text-left">
                                                 <p><span class="planesMovistar__descuento blue-centered mb0"
-                                                        style="padding-left:0;">$<span
+                                                        style="padding-left:0;">$6.000<span
                                                             class="js__plan-capacidad-unidad"></span> de
                                                         ahorro</span><br>
                                                     <span class="testdr-leyenda">por mes durante 24 meses</span></p>
@@ -686,10 +686,10 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                 <header class="planesMovistar_header">
                                     <img src="images/icono-capacidad-plan.png" class="d-inline icon-mb" />
                                     <p class="text20 mb0 bold d-inline capacidad-plan"><span
-                                            class="js__plan-gigas"></span> Gigas</p>
-                                    <p class="planesMovistar__priceTarifa">$<span
+                                            class="js__plan-gigas">15</span> Gigas</p>
+                                    <p class="planesMovistar__priceTarifa">$3.300<span
                                             class="js__plan-precio-oferta"></span><span class=""> x mes</span></p>
-                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$<span
+                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$9.200<span
                                             class="js__plan-full-price tachado"></span> x mes</p>
                                 </header>
                                 <div class="js-precio-off">
@@ -700,7 +700,7 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                             </div>
                                             <div class="col-xs-10 col-md-10 col-md-10 col-lg-10 text-left">
                                                 <p><span class="planesMovistar__descuento blue-centered mb0"
-                                                        style="padding-left:0;">$<span
+                                                        style="padding-left:0;">$5.900<span
                                                             class="js__plan-capacidad-unidad"></span> de
                                                         ahorro</span><br>
                                                     <span class="testdr-leyenda">por mes durante 24 meses</span></p>
@@ -909,10 +909,10 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                 <header class="planesMovistar_header">
                                     <img src="images/icono-capacidad-plan.png" class="d-inline icon-mb" />
                                     <p class="text20 mb0 bold d-inline capacidad-plan"><span
-                                            class="js__plan-gigas"></span> Gigas</p>
-                                    <p class="planesMovistar__priceTarifa">$<span
+                                            class="js__plan-gigas">25</span> Gigas</p>
+                                    <p class="planesMovistar__priceTarifa">$3.700<span
                                             class="js__plan-precio-oferta"></span><span class=""> x mes</span></p>
-                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$<span
+                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$10.500<span
                                             class="js__plan-full-price tachado"></span> x mes</p>
                                 </header>
                                 <div class="js-precio-off">
@@ -923,7 +923,7 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                             </div>
                                             <div class="col-xs-10 col-md-10 col-md-10 col-lg-10 text-left">
                                                 <p><span class="planesMovistar__descuento blue-centered mb0"
-                                                        style="padding-left:0;">$<span
+                                                        style="padding-left:0;">$6.800<span
                                                             class="js__plan-capacidad-unidad"></span> de
                                                         ahorro</span><br>
                                                     <span class="testdr-leyenda">por mes durante 24 meses</span></p>
@@ -1453,7 +1453,7 @@ $this->title = 'Portabilidad sin Equipo Movistar';
     </script>
     <!--Fin JS Toggle detalles planes-->
     <!-- inConcert Marketing & Sales -->
-    <script>
+    <!-- <script>
         (function (w, d, t, u, n, a, m) {
             a = d.createElement(t);
             m = d.getElementsByTagName(t)[0];
@@ -1463,4 +1463,11 @@ $this->title = 'Portabilidad sin Equipo Movistar';
         })(window, document, "script",
             "https://mas-tma.inconcertcc.com/public/integration/scripts.js?token=0dad7f04999b997af9d7bf82d66fe071", "ic"
         );
+    </script> -->
+
+    <script>
+        document.getElementById('form-number').addEventListener('submit', e => {
+            e.preventDefault();
+            console.log('enviando');
+        });
     </script>
