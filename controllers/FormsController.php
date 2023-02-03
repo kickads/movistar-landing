@@ -73,7 +73,7 @@ class FormsController extends Controller
             if($model->save()){
                 $success = 200;
                 // Informe s2s a kickads
-                $model->informToKickads($data->post('ktoken'));
+//                $model->informToKickads($data->post('ktoken'));
                 // Informe s2s a Cliente
 //                $model->informToClient($data);
             }else{

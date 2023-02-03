@@ -64,6 +64,7 @@ AppAsset::register($this);
 			</div>
 		</main>
 		<?php $this->endBody() ?>
+    <script async="" src="./js/register-form.js" type="text/javascript"></script>
 	</body>
 </html>
 <?php $this->endPage() ?>

@@ -1447,23 +1447,3 @@ $this->title = 'Portabilidad sin Equipo Movistar';
             }
         });
     </script>
-    <!--Fin JS Toggle detalles planes-->
-    <!-- inConcert Marketing & Sales -->
-    <!-- <script>
-        (function (w, d, t, u, n, a, m) {
-            a = d.createElement(t);
-            m = d.getElementsByTagName(t)[0];
-            a.async = 1;
-            a.src = u;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, "script",
-            "https://mas-tma.inconcertcc.com/public/integration/scripts.js?token=0dad7f04999b997af9d7bf82d66fe071", "ic"
-        );
-    </script> -->
-
-    <script>
-        document.getElementById('form-number').addEventListener('submit', e => {
-            e.preventDefault();
-            console.log('enviando');
-        });
-    </script>

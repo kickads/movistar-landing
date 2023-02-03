@@ -40,11 +40,11 @@ class Forms extends \yii\db\ActiveRecord
     {
         return [
             [['phone', 'ip', 'user_agent'], 'required'],
-            [['user_agent', 'external_click_id'], 'string'],
+            [['user_agent'], 'string'],
             [['created_at', 'updated_at', 'deleted_at'], 'safe'],
-            [['phone', 'ktoken', 'external_click_id', 'publisher_id'], 'string', 'max' => 255],
+//            [['phone', 'ktoken', 'external_click_id', 'publisher_id'], 'string', 'max' => 255],
             [['ip'], 'string', 'max' => 128],
-            [['provider_id'], 'integer'],
+//            [['provider_id'], 'integer'],
         ];
     }
 
@@ -58,10 +58,6 @@ class Forms extends \yii\db\ActiveRecord
             'phone' => 'Phone',
             'ip' => 'Ip',
             'user_agent' => 'User Agent',
-            'ktoken' => 'Ktoken',
-            'external_click_id' => 'External Click ID',
-            'provider_id' => 'Provider ID',
-            'publisher_id' => 'Publisher ID',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
             'deleted_at' => 'Deleted At',
