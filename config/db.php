@@ -2,7 +2,7 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=db_tigo;dbname=tigo',
+    'dsn' => 'mysql:host=db_movistar;dbname=movistar',
     'username' => 'admin',
     'password' => 'root',
     'charset' => 'utf8',

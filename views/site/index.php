@@ -11,10 +11,6 @@ $this->title = 'Portabilidad sin Equipo Movistar';
             id_lp_call_center = 'lp_20';
     </script>
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MJ5NS" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <div id="wrapper" class="main-portabilidad">
         <header class="mainHeader sticky barraSup ">
             <div class="container">
