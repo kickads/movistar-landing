@@ -64,7 +64,7 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                 <button
                                     class="input-group-addon btn-default-style btn-dark-blue-bg btnCallMe btnCallMeNow sendGTM boton-superior form-control-center absoluteButton z-index10 banner-boton"
                                     data-valor-plan="" data-cod-campana="Movil_Portabilidad"
-                                    onclick="sendAnalyticsEvent('portabilidad-70-off', 'click', 'CTC-lead-banner', this)"
+                                    onclick=""
                                     disabled>
                                     Siguiente
                                 </button>
