@@ -52,6 +52,7 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                     placeholder="Ej: 1137989765"
                                     class="form-control anictc form-control-center tel_number white redondo text16 input-caja-banner"
                                     onkeyup="handleKeyUp(this)" />
+                                    <span id="register__status"></span>
                                 <input id="codigoOrigenModal" type="hidden" name="Codigo_Origen"
                                     value="LP_Ofertas Avatar_Movil" class="orig" />
                                 <input id="codigoCampanaModal" type="hidden" name="Codigo_Campaña"

@@ -14,7 +14,7 @@ class m220107_141339_create_forms_table extends Migration
     {
         $this->createTable('{{%forms}}', [
             'id' => $this->primaryKey()->notNull(),
-            'phone' => $this->string(255)->notNull(),
+            'phone' => $this->string(255)->unique()->notNull(),
             'ip' => $this->string(128)->notNull(),
             'user_agent' => $this->text()->notNull(),
             'ktoken' => $this->string(255),
