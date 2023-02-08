@@ -66,7 +66,6 @@ class FormsController extends Controller
         if ($data->post('phone')) {
 
             $model = new Forms();
-            $model->full_name = $data->post('name');
             $model->phone = $data->post('phone');
             $model->ip = Yii::$app->request->getRemoteIP();;
             $model->user_agent = Yii::$app->request->getUserAgent();
@@ -74,7 +73,7 @@ class FormsController extends Controller
             if($model->save()){
                 $success = 200;
                 // Informe s2s a kickads
-                $model->informToKickads($data->post('ktoken'));
+//                $model->informToKickads($data->post('ktoken'));
                 // Informe s2s a Cliente
 //                $model->informToClient($data);
             }else{
