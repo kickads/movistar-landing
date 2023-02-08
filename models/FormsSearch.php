@@ -18,7 +18,7 @@ class FormsSearch extends Forms
     {
         return [
             [['id'], 'integer'],
-            [['full_name', 'phone', 'ip', 'user_agent', 'created_at', 'updated_at', 'deleted_at'], 'safe'],
+            [['phone', 'ip', 'user_agent', 'created_at', 'updated_at', 'deleted_at'], 'safe'],
         ];
     }
 
@@ -49,10 +49,6 @@ class FormsSearch extends Forms
 		    $endDate   = date('Y-m-d',strtotime('NOW'));
 	    }
 	    
-//	    echo $startDate . '<br>';
-//	    echo $endDate;
-//    	exit();
-	    
         $query = Forms::find();
 		
 	    $query->where(['between', 'CONVERT(created_at, DATE)', $startDate, $endDate]);
@@ -78,7 +74,7 @@ class FormsSearch extends Forms
             'deleted_at' => $this->deleted_at,
         ]);
 
-        $query->andFilterWhere(['like', 'full_name', $this->full_name])
+        $query
             ->andFilterWhere(['like', 'phone', $this->phone])
             ->andFilterWhere(['like', 'ip', $this->ip])
             ->andFilterWhere(['like', 'user_agent', $this->user_agent]);

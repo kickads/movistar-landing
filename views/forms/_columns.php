@@ -2,7 +2,6 @@
 
 return [
     'id',
-    'full_name',
     'phone',
     'ip',
     [
