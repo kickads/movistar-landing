@@ -56,7 +56,7 @@
 			"referredAtCampaignId": "",							// (opcional) Campa�a en que se ingres� el referido
 			"referredAtInteractionId": "",							// (opcional) ID de interacci�n en que se ingres� el referido
 				"Codigo_Origen": "Afiliados_KicKads",
-				"Codigo_Campa�a" : "Movil_Portabilidad",
+				"Codigo_Campaña" : "Movil_Portabilidad",
 				"Codigo_Descripcion":"",
 				"utm_CC":"P_AFI_KICKADS_0_H"
 		}
