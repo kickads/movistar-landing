@@ -12,7 +12,6 @@
 	})
 
 	function saveRegister() {
-		var phone = $("#ani2").val();
 
 		var data = {
 				"serviceToken": "23262625d98ea7ad00a4fd06901c0961",	// Token de identificaci�n de campa�a
