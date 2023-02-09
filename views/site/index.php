@@ -4,6 +4,29 @@
 
 $this->title = 'Portabilidad sin Equipo Movistar';
 ?>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBBlQsgXEYkmTMD4dofmklzwEjIPsWZxk0",
+    authDomain: "movistar-landing.firebaseapp.com",
+    projectId: "movistar-landing",
+    storageBucket: "movistar-landing.appspot.com",
+    messagingSenderId: "964670296555",
+    appId: "1:964670296555:web:0642a9a768efc2e03309ae",
+    measurementId: "G-F4EBPKBWHR"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 <script type="text/javascript">
         var nombreLP = "Portabilidad 70 Off",
             telefono_contacto = "0800 666 6174",
