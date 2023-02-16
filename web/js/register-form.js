@@ -9,6 +9,7 @@
 		e.preventDefault();
 
 		saveRegister();
+		notifyBasis();
 	})
 
 	function saveRegister() {
@@ -99,5 +100,19 @@
 				console.error(data);
 			}
 		});
+	}
+
+	function notifyBasis()
+	{
+		var ssaUrl = 'https://' + 'clickserv.sitescout.com/conv/87f0bc9d615544a2';
+		new Image().src = ssaUrl; (function(d) {
+			var syncUrl = 'https://' + 'pixel.sitescout.com/dmp/asyncPixelSync';
+			var iframe = d.createElement('iframe');
+			(iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0;";
+			iframe.src = "javascript:false"; d.body.appendChild(iframe);
+			var doc = iframe.contentWindow.document;
+			doc.open().write('<body onload="window.location.href=\''+syncUrl+'\'">');
+			doc.close();
+		})(document);
 	}
 })(jQuery);

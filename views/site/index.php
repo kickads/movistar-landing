@@ -27,7 +27,6 @@ $this->title = 'Portabilidad sin Equipo Movistar';
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
-<script type="text/javascript">var ssaUrl = 'https://' + 'clickserv.sitescout.com/conv/87f0bc9d615544a2';new Image().src = ssaUrl; (function(d) { var syncUrl = 'https://' + 'pixel.sitescout.com/dmp/asyncPixelSync'; var iframe = d.createElement('iframe'); (iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0;"; iframe.src = "javascript:false"; d.body.appendChild(iframe); var doc = iframe.contentWindow.document; doc.open().write('<body onload="window.location.href=\''+syncUrl+'\'">'); doc.close(); })(document); </script>
 <script type="text/javascript">
         var nombreLP = "Portabilidad 70 Off",
             telefono_contacto = "0800 666 6174",
