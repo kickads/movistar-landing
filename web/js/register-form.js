@@ -15,7 +15,7 @@
 		var phone = $("#ani2").val();
 
 		var data = {
-				"serviceToken": "23262625d98ea7ad00a4fd06901c0961",	// Token de identificaci�n de campa�a
+				"serviceToken": "c1f0212141a73a320a1ccd3f3bfa92df",	// Token de identificaci�n de campa�a
 				"serviceAction": "c2c",									// Canal en el que se procesar� el lead ingresado (c2c / form)
 				"visitId": "",											// (opcional) ID de la visita en la que se gener� el lead
 				"contentUrl": window.location.href,										// (opcional) URL en la que se gener� el lead
