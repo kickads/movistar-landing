@@ -64,8 +64,8 @@ class SiteController extends Controller
         $this->layout = "web";
         $request      = Yii::$app->request;
         $ktoken       = $request->get('ktoken') ?: null;
-        $pubId        = $request->get('pubId') ?: null;
-        $providerId   = $request->get('providerId') ?: null;
+        $providerId   = $request->get('provider_id') ?: null;
+        $pubId        = $request->get('pub_id') ?: null;
 
         return $this->render('index',[
             'ktoken'       => $ktoken,

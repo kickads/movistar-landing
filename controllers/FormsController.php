@@ -63,19 +63,20 @@ class FormsController extends Controller
     {
         $data = Yii::$app->request;
 
-        if ($data->post('phone')) {
-
+        if ($data->post('phone'))
+        {
             $model = new Forms();
             $model->phone = $data->post('phone');
-            $model->ip = Yii::$app->request->getRemoteIP();;
+            $model->ip = Yii::$app->request->getRemoteIP();
+            $model->provider_id = $data->post('providerId');
+            $model->publisher_id = $data->post('pubId');
+            $model->ktoken = $data->post('ktoken');
             $model->user_agent = Yii::$app->request->getUserAgent();
 
             if($model->save()){
                 $success = 200;
                 // Informe s2s a kickads
-//                $model->informToKickads($data->post('ktoken'));
-                // Informe s2s a Cliente
-//                $model->informToClient($data);
+                $model->informToKickads($data->post('ktoken'));
             }else{
                 $success = $model->getErrors();
             }
