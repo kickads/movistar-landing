@@ -42,9 +42,9 @@ class Forms extends \yii\db\ActiveRecord
             [['phone', 'ip', 'user_agent'], 'required'],
             [['user_agent'], 'string'],
             [['created_at', 'updated_at', 'deleted_at'], 'safe'],
-//            [['phone', 'ktoken', 'external_click_id', 'publisher_id'], 'string', 'max' => 255],
+            [['phone', 'ktoken', 'publisher_id'], 'string', 'max' => 255],
             [['ip'], 'string', 'max' => 128],
-//            [['provider_id'], 'integer'],
+            [['provider_id'], 'integer'],
         ];
     }
 

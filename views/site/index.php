@@ -27,7 +27,6 @@ $this->title = 'Portabilidad sin Equipo Movistar';
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
-<script type="text/javascript">var ssaUrl = 'https://' + 'clickserv.sitescout.com/conv/87f0bc9d615544a2';new Image().src = ssaUrl; (function(d) { var syncUrl = 'https://' + 'pixel.sitescout.com/dmp/asyncPixelSync'; var iframe = d.createElement('iframe'); (iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0;"; iframe.src = "javascript:false"; d.body.appendChild(iframe); var doc = iframe.contentWindow.document; doc.open().write('<body onload="window.location.href=\''+syncUrl+'\'">'); doc.close(); })(document); </script>
 <script type="text/javascript">
         var nombreLP = "Portabilidad 70 Off",
             telefono_contacto = "0800 666 6174",
@@ -81,10 +80,11 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                     value="LP_Ofertas Avatar_Movil" class="orig" />
                                 <input id="codigoCampanaModal" type="hidden" name="Codigo_Campaña"
                                     value="Movil_Portabilidad" class="camp" />
-                                <input id="infoModal" type="hidden" name="Codigo_Descripcion" value="" class="desc" />
-                                <input id="SessionID" type="hidden" name="SessionID" value="1" class="orig">
-                                <input id="horarioModal" type="hidden" name="Franja_Horaria"
-                                    data-ic-form-field="scheduleTime" value="">
+
+                                <input type="hidden" id="ktoken" name="ktoken" value="<?php echo $ktoken ?>">
+                                <input type="hidden" id="providerId" name="providerId" value="<?php echo $providerId ?>">
+                                <input type="hidden" id="pubId" name="pubId" value="<?php echo $pubId ?>">
+
                                 <label for="ani2" class="error active error-label"></label>
                                 <button
                                     class="input-group-addon btn-default-style btn-dark-blue-bg btnCallMe btnCallMeNow sendGTM boton-superior form-control-center absoluteButton z-index10 banner-boton"

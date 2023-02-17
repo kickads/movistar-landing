@@ -3,6 +3,9 @@
 return [
     'id',
     'phone',
+    'provider_id',
+    'publisher_id',
+    'ktoken',
     'ip',
     [
         'attribute' => 'created_at',

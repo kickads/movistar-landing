@@ -7,70 +7,72 @@
 
 	form.addEventListener('submit', e => {
 		e.preventDefault();
-
-		saveRegister();
+		notifyInconcert();
+		saveRegisterOnDB();
+		notifyBasis();
 	})
 
-	function saveRegister() {
+	function notifyInconcert()
+	{
 		var phone = $("#ani2").val();
 
 		var data = {
-				"serviceToken": "c1f0212141a73a320a1ccd3f3bfa92df",	// Token de identificaci�n de campa�a
-				"serviceAction": "c2c",									// Canal en el que se procesar� el lead ingresado (c2c / form)
-				"visitId": "",											// (opcional) ID de la visita en la que se gener� el lead
-				"contentUrl": window.location.href,										// (opcional) URL en la que se gener� el lead
-				"contentId": "",										// (opcional) ID del contenido en que se gener� el lead
-				"templateId": "",										// (opcional) ID del template con que se construy� el contenido
-				"sourceId": "",										// (opcional) ID de origen asociado a la generaci�n del lead
-				"thankyouPageUrl": "",									// (opcional) URL de thankyou page a la que se redirig� el lead
-				"formId": "",											// (opcional) ID del formulario en que se produjo la conversi�n
-				"buttonId": "",										// (opcional) ID del bot�n en que se produjo la conversi�n
-				"contactData": {
-			"email": "",						// (opcional) Email del contacto
-			"firstname": "",								// (opcional) Nombre del contacto
-			"lastname": "",								// (opcional) Apellido del contacto
-			"language": "",									// (opcional) Idioma del contacto
-			"owner": "",											// (opcional) Responsable del contacto (agente reservado en el canal c2c)
-			"company": "",										// (opcional) Compa��a del contacto
-			"position": "",										// (opcional) Posici�n del contacto
-			"phone": phone,								// Tel�fono del contacto (se utilizar� para procesar el canal c2c)
-			"mobile": "",											// (opcional) M�vil del contacto
-			"fax": "",											// (opcional) Fax del contacto
-			"website": "",										// (opcional) Sitio Web del contacto
-			"address1": "",										// (opcional) Direcci�n 1 del contacto
-			"address2": "",										// (opcional) Direcci�n 2 del contacto
-			"country": "",										// (opcional) Pa�s del contacto
-			"state": "",							// (opcional) Estado del contacto
-			"city": "",										// (opcional) Ciudad del contacto
-			"zip": "",											// (opcional) C�digo Postal del contacto
-			"facebook": "",										// (opcional) Cuenta de Facebook del contacto
-			"twitter": "",											// (opcional) Cuenta de Twitter del contacto
-			"skype": "",											// (opcional) Cuenta de Skype del contacto
-			"googlePlus": "",										// (opcional) Cuenta de Google Plus del contacto
-			"linkedin": "",										// (opcional) Cuenta de Linkedin del contacto
-			"instagram": "",										// (opcional) Cuenta de Instagram del contacto
-			"crm_current_plan": "",						// (opcional) Dato personalizado del contacto
-			"crm_account_number": "",						// (opcional) Dato personalizado del contacto
-			"referredDate": "",									// (opcional) Fecha de ingreso del contacto como referido
-			"referredByContactId": "",								// (opcional) Contacto original que lo referenci�
-			"referredAtCampaignId": "",							// (opcional) Campa�a en que se ingres� el referido
-			"referredAtInteractionId": "",							// (opcional) ID de interacci�n en que se ingres� el referido
+			"serviceToken": "c1f0212141a73a320a1ccd3f3bfa92df",	// Token de identificaci�n de campa�a
+			"serviceAction": "c2c",									// Canal en el que se procesar� el lead ingresado (c2c / form)
+			"visitId": "",											// (opcional) ID de la visita en la que se gener� el lead
+			"contentUrl": window.location.href,										// (opcional) URL en la que se gener� el lead
+			"contentId": "",										// (opcional) ID del contenido en que se gener� el lead
+			"templateId": "",										// (opcional) ID del template con que se construy� el contenido
+			"sourceId": "",										// (opcional) ID de origen asociado a la generaci�n del lead
+			"thankyouPageUrl": "",									// (opcional) URL de thankyou page a la que se redirig� el lead
+			"formId": "",											// (opcional) ID del formulario en que se produjo la conversi�n
+			"buttonId": "",										// (opcional) ID del bot�n en que se produjo la conversi�n
+			"contactData": {
+				"email": "",						// (opcional) Email del contacto
+				"firstname": "",								// (opcional) Nombre del contacto
+				"lastname": "",								// (opcional) Apellido del contacto
+				"language": "",									// (opcional) Idioma del contacto
+				"owner": "",											// (opcional) Responsable del contacto (agente reservado en el canal c2c)
+				"company": "",										// (opcional) Compa��a del contacto
+				"position": "",										// (opcional) Posici�n del contacto
+				"phone": phone,								// Tel�fono del contacto (se utilizar� para procesar el canal c2c)
+				"mobile": "",											// (opcional) M�vil del contacto
+				"fax": "",											// (opcional) Fax del contacto
+				"website": "",										// (opcional) Sitio Web del contacto
+				"address1": "",										// (opcional) Direcci�n 1 del contacto
+				"address2": "",										// (opcional) Direcci�n 2 del contacto
+				"country": "",										// (opcional) Pa�s del contacto
+				"state": "",							// (opcional) Estado del contacto
+				"city": "",										// (opcional) Ciudad del contacto
+				"zip": "",											// (opcional) C�digo Postal del contacto
+				"facebook": "",										// (opcional) Cuenta de Facebook del contacto
+				"twitter": "",											// (opcional) Cuenta de Twitter del contacto
+				"skype": "",											// (opcional) Cuenta de Skype del contacto
+				"googlePlus": "",										// (opcional) Cuenta de Google Plus del contacto
+				"linkedin": "",										// (opcional) Cuenta de Linkedin del contacto
+				"instagram": "",										// (opcional) Cuenta de Instagram del contacto
+				"crm_current_plan": "",						// (opcional) Dato personalizado del contacto
+				"crm_account_number": "",						// (opcional) Dato personalizado del contacto
+				"referredDate": "",									// (opcional) Fecha de ingreso del contacto como referido
+				"referredByContactId": "",								// (opcional) Contacto original que lo referenci�
+				"referredAtCampaignId": "",							// (opcional) Campa�a en que se ingres� el referido
+				"referredAtInteractionId": "",							// (opcional) ID de interacci�n en que se ingres� el referido
 				"Codigo_Origen": "Afiliados_KicKads",
 				"Codigo_Campaña" : "Movil_Portabilidad",
 				"Codigo_Descripcion":"",
 				"utm_CC":"P_AFI_KICKADS_0_H"
-		}
+			}
 		}
 
 		var settings = {
-		"method": "POST",
-		"url": "https://mas-tma.inconcertcc.com/public/integration/process",
-		"contentType": "application/json",
-		"dataType": "json",
-		"data": JSON.stringify(data),
-		"async": true,
-		"crossDomain": true,
-		"processData": false
+			"method": "POST",
+			"url": "https://mas-tma.inconcertcc.com/public/integration/process",
+			"contentType": "application/json",
+			"dataType": "json",
+			"data": JSON.stringify(data),
+			"async": true,
+			"crossDomain": true,
+			"processData": false
 		}
 
 		$.ajax(settings).done(function (response) {
@@ -78,15 +80,22 @@
 
 			switch(response.data.status) {
 				case 'duplicate':
-						statusMessage.textContent = 'El número fue registrado anteriormente';
-						break;
+					statusMessage.textContent = 'El número fue registrado anteriormente';
+					break;
 				case 'new':
-						statusMessage.textContent = 'Número registrado con éxito!';
+					statusMessage.textContent = 'Número registrado con éxito!';
 					break;
 			}
 		});
+	}
 
-		var dataString = 'phone=' + phone;
+	function saveRegisterOnDB() {
+		var phone = $("#ani2").val();
+		var ktoken = $("#ktoken").val();
+		var providerId = $("#providerId").val();
+		var pubId = $("#pubId").val();
+
+		var dataString = 'phone='+phone+'&ktoken='+ktoken+'&providerId='+providerId+'&pubId='+pubId;
 
 		$.ajax({
 			type: "POST",
@@ -100,4 +109,19 @@
 			}
 		});
 	}
+
+	function notifyBasis()
+	{
+		var ssaUrl = 'https://' + 'clickserv.sitescout.com/conv/87f0bc9d615544a2';
+		new Image().src = ssaUrl; (function(d) {
+			var syncUrl = 'https://' + 'pixel.sitescout.com/dmp/asyncPixelSync';
+			var iframe = d.createElement('iframe');
+			(iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0;";
+			iframe.src = "javascript:false"; d.body.appendChild(iframe);
+			var doc = iframe.contentWindow.document;
+			doc.open().write('<body onload="window.location.href=\''+syncUrl+'\'">');
+			doc.close();
+		})(document);
+	}
+
 })(jQuery);
