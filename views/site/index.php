@@ -124,9 +124,9 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                     <img src="images/icono-capacidad-plan.png" class="d-inline icon-mb" />
                                     <p class="text20 mb0 bold d-inline capacidad-plan"><span
                                             class="js__plan-gigas">3</span> Gigas </p>
-                                    <p class="planesMovistar__priceTarifa">$1.050<span
+                                    <p class="planesMovistar__priceTarifa">$1.450<span
                                             class="js__plan-precio-oferta"></span><span class=""> x mes</span></p>
-                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$3.500<span
+                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$3.900<span
                                             class="js__plan-full-price"></span> x mes</p>
                                 </header>
                                 <div class="js-precio-off">
@@ -296,9 +296,9 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                     <img src="images/icono-capacidad-plan.png" class="d-inline icon-mb" />
                                     <p class="text20 mb0 bold d-inline capacidad-plan"><span
                                             class="js__plan-gigas">6</span> Gigas</p>
-                                    <p class="planesMovistar__priceTarifa">$1.500<span
+                                    <p class="planesMovistar__priceTarifa">$2.200<span
                                             class="js__plan-precio-oferta"></span><span class=""> x mes</span></p>
-                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$5.100<span
+                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$5.500<span
                                             class="js__plan-full-price tachado"></span> x mes</p>
                                 </header>
                                 <div class="js-precio-off">
@@ -309,7 +309,7 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                             </div>
                                             <div class="col-xs-10 col-md-10 col-md-10 col-lg-10 text-left">
                                                 <p><span class="planesMovistar__descuento blue-centered mb0"
-                                                        style="padding-left:0;">$3.600<span
+                                                        style="padding-left:0;">$3.300<span
                                                             class="js__plan-capacidad-unidad"></span> de
                                                         ahorro</span><br>
                                                     <span class="testdr-leyenda">por mes durante 24 meses</span></p>
@@ -485,9 +485,9 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                     <img src="images/icono-capacidad-plan.png" class="d-inline icon-mb" />
                                     <p class="text20 mb0 bold d-inline capacidad-plan"><span
                                             class="js__plan-gigas">10</span> Gigas</p>
-                                    <p class="planesMovistar__priceTarifa">$2.400<span
+                                    <p class="planesMovistar__priceTarifa">$3.400<span
                                             class="js__plan-precio-oferta"></span><span class=""> x mes</span></p>
-                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$8.400<span
+                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$8.900<span
                                             class="js__plan-full-price tachado"></span> x mes</p>
                                 </header>
                                 <div class="js-precio-off">
@@ -498,7 +498,7 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                             </div>
                                             <div class="col-xs-10 col-md-10 col-md-10 col-lg-10 text-left">
                                                 <p><span class="planesMovistar__descuento blue-centered mb0"
-                                                        style="padding-left:0;">$6.000<span
+                                                        style="padding-left:0;">$5.500<span
                                                             class="js__plan-capacidad-unidad"></span> de
                                                         ahorro</span><br>
                                                     <span class="testdr-leyenda">por mes durante 24 meses</span></p>
@@ -708,9 +708,9 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                     <img src="images/icono-capacidad-plan.png" class="d-inline icon-mb" />
                                     <p class="text20 mb0 bold d-inline capacidad-plan"><span
                                             class="js__plan-gigas">15</span> Gigas</p>
-                                    <p class="planesMovistar__priceTarifa">$3.300<span
+                                    <p class="planesMovistar__priceTarifa">$3.800<span
                                             class="js__plan-precio-oferta"></span><span class=""> x mes</span></p>
-                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$9.200<span
+                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$9.700<span
                                             class="js__plan-full-price tachado"></span> x mes</p>
                                 </header>
                                 <div class="js-precio-off">
@@ -931,9 +931,9 @@ $this->title = 'Portabilidad sin Equipo Movistar';
                                     <img src="images/icono-capacidad-plan.png" class="d-inline icon-mb" />
                                     <p class="text20 mb0 bold d-inline capacidad-plan"><span
                                             class="js__plan-gigas">25</span> Gigas</p>
-                                    <p class="planesMovistar__priceTarifa">$3.700<span
+                                    <p class="planesMovistar__priceTarifa">$4.200<span
                                             class="js__plan-precio-oferta"></span><span class=""> x mes</span></p>
-                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$10.500<span
+                                    <p class="planesMovistar__priceTarifaAnterior--b tachado">$11.000<span
                                             class="js__plan-full-price tachado"></span> x mes</p>
                                 </header>
                                 <div class="js-precio-off">
